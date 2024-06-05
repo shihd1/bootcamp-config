@@ -104,7 +104,6 @@ bootstrap:
       # Typical config will have separate namespace by data source ("src") and use cases ("uc")
       - ns-name: uc
         description: Use cases representing the data/products
-        # Description names will normally follow src:001:srcname or uc:001:usecasename naming convention
         ns-nodes:
           - node-name: uc:001:oee
             description: Use case 001 Over all Equipment effectiveness
