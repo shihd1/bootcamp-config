@@ -11,17 +11,17 @@ bootstrap:
         rawdb-additional-variants:
             - state
     idp-cdf-mappings:
-        - cdf-project: cdf-bootcamp-55-test # i.e. bootcamp-01-test
+        - cdf-project: cdf-bootcamp-55-test  # i.e. bootcamp-01-test
           mappings:
               - cdf-group: cdf:root
                 idp-source-id: 3a9acafc-3d86-419c-8a33-936411a03d1b
                 idp-source-name: bootcamp-55-test-admin
               - cdf-group: cdf:all:owner
-                idp-source-id: f0fdb0a6-7dfb-4091-a2f2-4dfdaad1ed7d # for the AAD Group to be matched to cdf-group
-                idp-source-name: bootcamp-55-test-all-owner # i.e. bootcamp-01-test-all-owner
+                idp-source-id: f0fdb0a6-7dfb-4091-a2f2-4dfdaad1ed7d  # for the AAD Group to be matched to cdf-group
+                idp-source-name: bootcamp-55-test-all-owner  # i.e. bootcamp-01-test-all-owner
               - cdf-group: cdf:all:read
-                idp-source-id: 5c3531c0-8bd6-4dfd-8b4d-e3b0345a0a7a # for the AAD Group to be matched to cdf-group
-                idp-source-name: bootcamp-55-test-all-read # i.e. bootcamp-01-test-all-read
+                idp-source-id: 5c3531c0-8bd6-4dfd-8b4d-e3b0345a0a7a  # for the AAD Group to be matched to cdf-group
+                idp-source-name: bootcamp-55-test-all-read  # i.e. bootcamp-01-test-all-read
               - cdf-group: cdf:uc:001:oee:read
                 idp-souce-id: a911bd06-208b-40dd-a09b-edeef6789837
                 idp-source-name: bootcamp-55-test-uc-001-oee-read
@@ -56,7 +56,6 @@ bootstrap:
                 description: Source 01 data from SAP
               - node-name: src:002:opcua
                 description: Source 02 data from opcua
-        # Typical config will have separate namespace by data source ("src") and use cases ("uc")
         - ns-name: uc
           description: Use cases representing the data/products
           ns-nodes:
@@ -71,7 +70,7 @@ bootstrap:
 # de-facto standards for CDF CogniteClient and logger configuration.
 # Following the same parameter structure as the 'Cognite Python Extractor-Utilities'
 # and 'Cognite DB Extractor' configuration.
-cognite: # kwargs to pass to the CogniteClient, Environment variable format: ${ENVIRONMENT_VARIABLE_NAME}
+cognite:  # kwargs to pass to the CogniteClient, Environment variable format: ${ENVIRONMENT_VARIABLE_NAME}
     # host: https://${BOOTSTRAP_CDF_CLUSTER}.cognitedata.com/
     host: ${BOOTSTRAP_CDF_HOST}
     project: ${BOOTSTRAP_CDF_PROJECT}
