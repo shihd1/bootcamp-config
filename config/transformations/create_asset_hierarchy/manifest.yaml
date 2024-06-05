@@ -2,7 +2,7 @@
 # Manifest file downloaded from fusion
 externalId: tr-create_asset_hierarchy
 name: create_asset_hierarchy
-query: 
+query:
   file: transformation.sql
 destination:
   type: asset_hierarchy
@@ -20,4 +20,4 @@ authentication:
 # Optional: If idP requires providing the scopes
   cdfProjectName: ${CDF_PROJECT_NAME}
   scopes:
-      - https://westeurope-1.cognitedata.com/.default
+    - https://westeurope-1.cognitedata.com/.default
